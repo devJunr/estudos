@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino TABLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header_contain">
+        <h1>Escola Virtual</h1>
+        <h5>Formulário de Pré-Matrícula</h5>
+    </header>
+    
+    <form class="formulario-container">
+        <table  class="tabela-main">
+            <tr>
+                <td>
+                    <strong>Dados pessoais</strong>
+                    <table class="tabela-dados-main">
+                        <tr>
+                            <td>Nome do aluno: <input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Nascimento (dd/mm/aaaa): <input type="number" max="31" class="data_nascimento">
+                                /
+                                <input type="number" max="12" class="data_nascimento">
+                                /
+                                <input type="number" class="data_nascimento">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nome da mãe: <input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>Nome do Pai: <input type="text" name="" id=""></td>
+                        </tr>
+
+                        <tr>
+                            <td>Telefone: DDD (<input type="number" class="num-ddd-tel">) Tel: <input type="number"
+                                    class="num-tel"> Ramal: <input type="number" class="num-ramal">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>E-Mail: <input type="email" name="" id=""></td>
+                        </tr>
+                    </table>
+                </td>
+                <table class="tabela-secundaria">
+                    <tr>
+                        <td>
+                            <strong>Informações de Matricula</strong>
+                        </td>
+                    <tr class="tabela-secundaria-info">
+                        <td>
+                            Série: <br>
+                            <select name="serie">
+                                <option value="1">Pré-escola</option>
+                                <option value="2">Pré-escola II</option>
+                                <option value="3">Maternal</option>
+                            </select>
+                        </td>
+                        <td>Turno: <br>
+                            <input type="radio" name="turno" id="manha" value="manha">
+                            <label for="manha">Manhã</label> <br>
+
+                            <input type="radio" name="turno" id="tarde" value="tarde">
+                            <label for="tarde">Tarde</label>
+                        </td>
+
+                        <td>Atividades Extracurriculares:
+                            <br>
+                            <input type="checkbox">
+                            <label>Informática</label><br>
+
+                            <input type="checkbox">
+                            <label>Música</label><br>
+
+                            <input type="checkbox">
+                            <label>Balet</label><br>
+
+                            <input type="checkbox">
+                            <label>Pintura</label><br>
+
+                            <input type="checkbox">
+                            <label>Judô</label><br>
+
+                            <input type="checkbox">
+                            <label>Futebol</label><br>
+                        </td>
+                    </tr>
+            </tr>
+        </table>
+
+        </tr>
+    </table>
+    <div class="acao_btn">
+        <input type="button" value="Enviar Formulário">
+        <input type="reset" value="Limpar Campos">
+    </div>
+
+    </form>
+</body>
+
+</html>
